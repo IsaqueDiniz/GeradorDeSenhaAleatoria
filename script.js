@@ -52,7 +52,7 @@ function gerar() {
         console.log(senha);
     }
 
-    resultado.disabled = true;
+    resultado.removeAttribute('disabled');
 }
 
 let resultado = document.getElementById('senha');
