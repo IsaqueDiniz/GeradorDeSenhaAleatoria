@@ -52,8 +52,7 @@ function gerar() {
         console.log(senha);
     }
 
-    //document.getElementById('quantidade').value = '';
-
+    resultado.disabled = true;
 }
 
 let resultado = document.getElementById('senha');
