@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gerador de senha Aleatória</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <div class="conteiner_titulo">
+        <h1>Gerador de Senha</h1>
+        <h2 class="titulo">Aleatória</h1>
+      </div>
+      <div class="conteiner_informacao">
+        <div class="senha">
+          <input id="senha" class="caixa_resposta" value="" placeholder="resultado" disabled />
+          <button id="copiar" class="botao_copiar" type="button">
+            <img src="img/svgviewer-output (2).svg"></button>
+        </div>
+        <div class="conteiner_01">
+          <input type="number" id="quantidade" min="1" max="50" placeholder="00">Quantidade de Itens
+        </div>
+        <div class="caixas_checkbox">
+          <div>
+            <label class="caixas_input" for="maiusculas">
+              <input type="checkbox" value="maiusculas" id="maiusculas">
+              <span class="checkmark"></span> 
+              <a>Letras Maiúsculas</a>
+            </label>
+          </div>
+          
+          <div>
+            <label class="caixas_input" for="minusculas">
+              <input type="checkbox" value="minusculas" id="minusculas">
+              <span class="checkmark"></span>
+              <a>Letras Minúsculas</a>
+            </label>
+          </div>
+          
+          <div>
+            <label class="caixas_input" for="numeros">
+              <input type="checkbox" value="numeros" id="numeros">
+              <span class="checkmark"></span>
+              <a>Números</a>
+            </label>
+          </div>
+          
+          <div>
+            <label class="caixas_input" for="caracteres">
+              <input type="checkbox" value="caracteres" id="caracteres">
+              <span class="checkmark"></span>
+              <a>Caractere Especial</a>
+            </label>
+          </div>
+          
+        </div>
+        <div>
+          <button onclick = "gerar()" id="botao-gerar" class="botao" disabled>Gerar senha</button>
+        </div>
+      </div>
+    </main>
+
+    <footer id="aba-info" class="embaixo">
+      <div class="conteiner-footer">
+        <p>&copy; 2025 Isaque Diniz. Todos os direitos reservados.</p>
+        <nav class="footer-nav">
+            <a class="Codédex" target="_blank" href="https://www.codedex.io/@Tchuc01" >Codedex</a>
+            <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/isaque-diniz-212833243/" >Linkedin</a>
+            <a class="github" target="_blank" href="https://github.com/IsaqueDiniz" >GitHub</a>
+        </nav>
+    </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
